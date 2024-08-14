@@ -24,4 +24,4 @@ USER node
 
 EXPOSE 3000
 
-CMD [ "nodemon", "-L", "-x", "npm start" ]
+CMD ["npm", "start"]

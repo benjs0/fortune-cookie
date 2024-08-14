@@ -6,7 +6,7 @@ const app = express();
 app.get('/', (req, res) => {
     child_process.exec('fortune', (error, message) => {
         if(error === null) {
-            res.send(message);
+            res.send("Your fortune is: " + message);
         } else {
             res.send('Error: ' + error);
         }
